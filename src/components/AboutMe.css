@@ -1,0 +1,348 @@
+.body {
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contained {
+    text-align: center;
+    width: 80vw;
+    margin-left: 20vw;
+    justify-content: center;
+}
+
+  
+  .contained h1 {
+    font-size: 40px;
+    color: #ffffff;
+  }
+  
+  .containabout {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    margin-left: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 57px;
+    background: linear-gradient(315deg, #333333, #121212);
+    box-shadow: 13px 13px 40px #0e0b0b, -13px -13px 40px #362d2d;
+    font-family: 'Montserrat', sans-serif;
+
+    p{
+        font-size: 18px;
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+  }
+  
+  .flexabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+  
+  :root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+  }
+  
+  .leftSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 100px;
+  }
+  
+  a {
+    margin-left: -30px;
+    color: #bb86fc;
+  }
+  
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    gap: 400px;
+  }
+  
+  .wrapper .icons {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    object-position: center;
+    backdrop-filter: blur(5px);
+  }
+  
+  .wrapper .icons span {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #333333;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #bb86fc;
+    margin: 20%;
+  }
+  
+  .wrapper .icons span i {
+    line-height: 60px;
+    font-size: 26px;
+  }
+  
+  .wrapper .icons .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #bb86fc;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icons:hover .tooltip {
+    top: -60px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icons:hover span {
+    color: #ffffff;
+  }
+  
+  .wrapper .icons:hover span,
+  .wrapper .icons:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  .wrapper .facebook:hover span,
+  .wrapper .facebook:hover .tooltip {
+    background: #3b5999;
+  }
+  
+  .wrapper .instagram:hover span,
+  .wrapper .instagram:hover .tooltip {
+    background: #e1306c;
+  }
+  
+  .wrapper .twitter:hover span,
+  .wrapper .twitter:hover .tooltip {
+    background: #46c1f6;
+  }
+  
+  .wrapper .youtube:hover span,
+  .wrapper .youtube:hover .tooltip {
+    background: #CD201F;
+  }
+  
+  #para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+  }
+  
+  .pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 2%;
+  }
+  
+  .pic img {
+    width: 33vw;
+    height: 100vh;
+  }
+  
+  .col-lg-6 {
+    margin: 2%;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul strong {
+    margin-right: 10px;
+    color: #ff6f61;
+  }
+  
+  ul i {
+    font-size: 16px;
+    color: #bb86fc;
+    line-height: 0;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .flexabout {
+      height: 50%;
+    }
+  
+    .contained {
+      text-align: center;
+      width: 100vw;
+      margin-left: 0%;
+      justify-content: center;
+    }
+  
+    .contained h1 {
+      font-size: 40px;
+    }
+  
+    .wrapper {
+      display: none;
+    }
+  
+    #para {
+      margin-left: -70px;
+    }
+  
+    .pic {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .flexabout {
+      height: 50%;
+    }
+  
+    .contained {
+      text-align: center;
+      width: 100vw;
+      margin-left: 0%;
+      justify-content: center;
+    }
+  
+    .contained h1 {
+      font-size: 40px;
+    }
+  
+    .wrapper {
+      display: none;
+    }
+  
+    #para {
+      margin-top: 130px;
+      margin-left: -100px;
+    }
+  
+    #para p {
+      font-size: 18px;
+      margin-left: 30px;
+      margin-right: 40px;
+      margin-top: -60px;
+    }
+  
+    .row .col-lg-6 {
+      margin-top: -20px;
+      margin-left: 40px;
+    }
+  
+    .row .col-lg-61 {
+      margin-top: 110px;
+      margin-left: -240px;
+    }
+  
+    .row span {
+      font-size: 13px;
+    }
+  
+    .pic {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .flexabout {
+      height: 50%;
+    }
+  
+    .contained {
+      text-align: center;
+      width: 100vw;
+      margin-left: 0%;
+      margin-right: 4%;
+      justify-content: center;
+    }
+  
+    .contained h1 {
+      font-size: 4rem;
+    }
+  
+    .wrapper {
+      display: none;
+    }
+  
+    #para {
+      margin-top: 130px;
+      margin-left: -100px;
+    }
+  
+    #para p {
+      font-size: 18px;
+      margin-left: 30px;
+      margin-right: 40px;
+      margin-top: -60px;
+    }
+  
+    .row .col-lg-6 {
+      margin-top: -20px;
+      margin-left: 40px;
+    }
+  
+    .row .col-lg-61 {
+      margin-top: 110px;
+      margin-left: -240px;
+    }
+  
+    .row span {
+      font-size: 13px;
+    }
+  
+    .pic {
+      display: none;
+    }
+  }
+  

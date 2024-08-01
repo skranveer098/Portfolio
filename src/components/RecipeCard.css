@@ -1,0 +1,136 @@
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background: #1e1e1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #ffbb66;
+    position: absolute;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
+  
+  #right {
+    background-color: #ff8866;
+    top: 0px;
+    left: 60px;
+    width: 120px;
+    height: 120px;
+    animation-delay: -800ms;
+  }
+  
+  #bottom {
+    background-color: #ff2233;
+    bottom: -20px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .front-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .badge .linking {
+    text-decoration: none;
+    color: #20c997;
+    border-bottom: 2px solid #20c997;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .badge .linking:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .description .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-footer {
+    font-size: 0.8em;
+    color: #b3b3b3;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  

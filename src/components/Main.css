@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#scroll-container {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  background:linear-gradient(to bottom, #616161, #9bc5c3);;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  width: 1.5%;
+}
+
+#scroll-container div {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Add your own styles for sections */
+#home-section,
+#about-section,
+#skills-section,
+#projects-section,
+#contact-section {
+  height: 100vh;
+  /* width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em; */
+}
+
+#home-section { background-color: #ebdede; }
+#about-section { background-color: #d0d0d0; }
+#skills-section { background-color: #ebdede; }
+#projects-section { background-color: #e0e0e0; }
+#contact-section { background-color: #f0f0f0; }
+
+@media screen and (max-width: 780px) {
+  #scroll-container {
+    display: none;
+  }
+}

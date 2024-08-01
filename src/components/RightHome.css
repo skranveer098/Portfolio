@@ -1,0 +1,14 @@
+/* .divright
+{
+    background-color: rgb(22, 22, 14);
+   background-color: rgb(42, 31, 31);
+    background-size: cover;
+    width:50vw;
+    height:100vh;
+}
+
+@media screen and (max-width: 780px) {
+    .divright {
+        width: 100vw;
+    }
+} */
