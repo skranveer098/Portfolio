@@ -9,7 +9,7 @@ import './skills.css';
 const Skills = () => {
   return (
     <div className="flexskills" style={{background:"linear-gradient(145deg, #1f1919, #241e1e)"}}>
-      <div className="containskills" style={{ color: "white", backgroundColor: "#221c1c" }}>
+      <div className="containskills" style={{ color: "white"}}>
         <h1 id="hskills" style={{ color: "white" }}>Skills</h1>
         <p>Myself Ranveer Singh Karnawat from Rajasthan. I am interested in the domain of
 Web and Software Developer with experience in tech Stacks like ReactJS . Proven track record in my projects. Seeking a challenging role to leverage technical expertise.

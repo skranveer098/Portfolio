@@ -14,13 +14,12 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    border-radius: 30px;
 
-    p{
-        font-size: 18px;
-        margin-left: 80px;
-        margin-right: 50px;
-    }
+}
+p{
+    font-size: 18px;
+    margin-left: 80px;
+    margin-right: 50px;
 }
 
 #hskills {

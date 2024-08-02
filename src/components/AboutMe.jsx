@@ -102,10 +102,7 @@ Web and Software Developer with experience in tech Stacks like ReactJS . Proven 
         <i className="bi bi-chevron-right"></i>{" "}
         <strong>City:</strong> <span style={{color: 'aliceblue'}}>Jamshedpur, Jharkhand, India</span>
       </li>
-    </ul>
-  </div>
-  <div className="col-lg-6"> {/* Changed from col-lg-61 to col-lg-6 */}
-    <ul>
+    
       <li>
         <i className="bi bi-chevron-right"></i>{" "}
         <strong>Age:</strong> <span style={{color: 'aliceblue'}}>21</span>

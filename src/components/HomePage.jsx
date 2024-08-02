@@ -59,7 +59,7 @@ const HomePage = () => {
 
   return (
     <div className="flexskills" style={{background:"linear-gradient(145deg, #1f1919, #241e1e)"}}>
-      <div className="containskills" style={{ color: "white", backgroundColor: "#221c1c" }}>
+      <div className="containskills">
         <div className="text-section">
           <h2 id="dynamicTextHii">{dynamicTextHii}</h2>
           <h1 id="dynamicTextH1">{dynamicTextH1}</h1>
@@ -81,9 +81,9 @@ const HomePage = () => {
             Rate me on Github
           </button>
         </div>
-        <div className="image-section">
+        {/* <div className="image-section">
           <img src={image} alt="Ranveer Singh Karnawat" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import image3 from "./phots/portfolio.png";
 const Projects = () => {
   return (
     <div className="flexproject" style={{background:"linear-gradient(145deg, #1f1919, #241e1e)"}}>
-      <div className="containproject" style={{background:"linear-gradient(145deg, #1f1919, #241e1e)"}}>
+      <div className="containproject" >
         <h1 id="hproject" style={{color:'aliceblue'}}>Project</h1>
         <p style={{color:'aliceblue'}}>
           Designed and implemented an e-commerce platform using React and
