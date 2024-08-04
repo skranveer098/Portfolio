@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaGithub , FaNodeJs } from "react-icons/fa";
 import { IoLogoReact } from "react-icons/io5";
-import { FaBootstrap } from "react-icons/fa6";
+// import { FaBootstrap } from "react-icons/fa6";
 
 
 import './skills.css';
@@ -40,13 +40,14 @@ Web and Software Developer with experience in tech Stacks like ReactJS . Proven 
             C++
           </div>
           <div className='box'>
-            <FaBootstrap size='50%'/>
-            BOOTSTRAP
+            <FaNodeJs size='50%'/>
+            NodeJs
           </div>
-          <div className='box'>
-            <img src="https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1664-edw9bz9l.png" alt="c++" id="cpp" style={{objectFit:"contain", borderRadius:"10px"}}/>
-            MATERIAL UI
+          <div className='box' style={{alignItems:"center" , justifyContent:"center"}}>
+            <img src="https://e7.pngegg.com/pngimages/555/745/png-clipart-mongodb-database-solution-stack-php-others-leaf-monochrome-thumbnail.png" alt="c++" id="cpp" style={{objectFit:"contain", borderRadius:"10px" }}/>
+            MongoDB
           </div>
+          
         </div>
       </div>
     </div>

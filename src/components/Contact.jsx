@@ -20,7 +20,7 @@ const Contact = (props) => {
       <section className="contact_page_section" id="contact_page" style={{height:"100vh"}}>
         
       <div className="contact_section">
-      <h1 id="hskills" style={{ color: "white" }}>Skills</h1>
+      <h1 id="hskills" style={{ color: "white" }}>Contact</h1>
 
         <div className="contact_container">
           <div className="form_container_left">
@@ -84,11 +84,11 @@ const Contact = (props) => {
               </form>
             </div>
           </div>
-          <img
+          {/* <img
             src={contact}
             className="form_container_right"
             alt="contact images"
-          ></img>
+          ></img> */}
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-.container {
+.left-scroll {
     position: fixed;
     width: 20vw;
     height: 100vh;
@@ -14,62 +14,98 @@
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
-}
-
-.image-container {
+  }
+  
+  .profile-image-container {
     margin-top: 20px;
-}
-
-.image-container img {
-    width: 150px;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.headings {
+    margin-bottom: 10px;
+  }
+  
+  .nav-menu {
     width: 100%;
     text-align: center;
-}
-
-h1 {
+  }
+  
+  .nav-menu h1 {
     margin: 0;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
     padding: 0.5rem 0;
-    font-size: 1.2rem; /* Reduced font size */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
-}
-
-h1:hover {
-    color: #4400ff;
-    transform: scale(1.05);
-}
-
-.active {
+  }
+  
+  .nav-menu h1.active {
     color: #ff9800;
-    font-size: 1.5rem; /* Adjusted font size */
-}
-
-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0;
-}
-
-@media (max-width: 780px) {
-    .container {
-        display: none;
+    transform: scale(1.1);
+    font-size: 3rem;
+  }
+  
+  .nav-menu h1:hover {
+    color: #ff9800;
+    transform: scale(1.05);
+  }
+  
+  .menu-toggle {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .left-scroll {
+      width: 100vw;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      box-shadow: none;
+      transition: height 0.3s ease;
     }
-}
-
+  
+    .profile-image-container {
+      display: none;
+    }
+  
+    .nav-menu {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+  
+    .nav-menu h1 {
+      font-size: 1rem;
+      margin: 0 1rem;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .left-scroll.open .nav-menu {
+      display: flex;
+    }
+  }
+  

@@ -43,7 +43,7 @@ background: linear-gradient(145deg, #1f1919, #241e1e);
     flex-wrap: wrap;
     width: 100%; /* Take up 100% width of the parent container */
     max-width: 70vw; /* Set a max-width for better fit within the skills section */
-    height: 70vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     border-radius: 57px;
