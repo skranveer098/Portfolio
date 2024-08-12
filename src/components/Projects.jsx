@@ -1,9 +1,11 @@
 import React from "react";
 import "./projects.css";
 import Cards from "./Cards.jsx";
-import image1 from "./phots/mys.png";
-import image2 from "./phots/icmmmi.png";
-import image3 from "./phots/portfolio.png";
+import FlavourSprint from "./phots/FoodSprint.png";
+import BookInventory from "./phots/BookInventory.png";
+import ImageApp from "./phots/mys.png";
+import ICMMMI from "./phots/icmmmi.png";
+import Portfolio from "./phots/Portfolio.png";
 
 const Projects = () => {
   return (
@@ -20,25 +22,39 @@ const Projects = () => {
         </p>
         <div className="boxcontainerp" style={{background:"linear-gradient(145deg, #1f1919, #241e1e)"}}>
           <div className="boxp">
+          <Cards
+              image={BookInventory}
+              name="Book Inventory App"
+              view="https://book-inventory-j3sf.vercel.app/"
+              github="https://github.com/skranveer098/BookInventory"
+              techStack="HTML CSS JS"
+            />
             <Cards
-              image={image1}
+              image={FlavourSprint}
+              name="Flavour Sprint App"
+              view="https://flavour-sprint-pvsq.vercel.app/"
+              github="https://github.com/skranveer098/FlavourSprint"
+              techStack="HTML CSS JS"
+            />
+            <Cards
+              image={Portfolio}
+              name="My Portfolio "
+              view="https://65b4102b4d919a0a42bf536e--gorgeous-creponne-3cae51.netlify.app/"
+              github="https://github.com/skranveer098/My_Portfolio.git"
+              techStack="HTML CSS JS"
+            />
+            <Cards
+              image={ImageApp}
               name="Image Search App"
               view="https://superlative-nasturtium-62d5ad.netlify.app"
               github="https://github.com/skranveer098/Image-Search-App.git"
               techStack="HTML CSS JS"
             />
             <Cards
-              image={image2}
+              image={ICMMMI}
               name="ICMMMI Website"
-              view="www.icmmmi.in"
+              view="https://icmmmi.in/"
               github="https://github.com/shubham691438/ICMMMI"
-              techStack="HTML CSS JS"
-            />
-            <Cards
-              image={image3}
-              name="My Portfolio Website"
-              view="https://65b4102b4d919a0a42bf536e--gorgeous-creponne-3cae51.netlify.app/"
-              github="https://github.com/skranveer098/My_Portfolio.git"
               techStack="HTML CSS JS"
             />
           </div>
