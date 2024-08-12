@@ -5,7 +5,7 @@ import FlavourSprint from "./phots/FoodSprint.png";
 import BookInventory from "./phots/BookInventory.png";
 import ImageApp from "./phots/mys.png";
 import ICMMMI from "./phots/icmmmi.png";
-import Portfolio from "./phots/Portfolio.png";
+import Portfolio from "./phots/MyPortfolio.png";
 
 const Projects = () => {
   return (
@@ -40,7 +40,7 @@ const Projects = () => {
               image={Portfolio}
               name="My Portfolio "
               view="https://65b4102b4d919a0a42bf536e--gorgeous-creponne-3cae51.netlify.app/"
-              github="https://github.com/skranveer098/My_Portfolio.git"
+              github="https://github.com/skranveer098/Portfolio"
               techStack="HTML CSS JS"
             />
             <Cards
